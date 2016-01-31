@@ -39,6 +39,14 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LiteDB090">
+      <HintPath>..\LiteDB.Shell\Resources\LiteDB090.dll</HintPath>
+      <Aliases>v090</Aliases>
+    </Reference>
+    <Reference Include="LiteDB104">
+      <HintPath>..\LiteDB.Shell\Resources\LiteDB104.dll</HintPath>
+      <Aliases>v104</Aliases>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -60,6 +68,7 @@
     <Compile Include="Concurrency\ParallelTest.cs" />
     <Compile Include="Concurrency\TaskTest.cs" />
     <Compile Include="Concurrency\ThreadSafeTest.cs" />
+    <Compile Include="Crud\LongCountTest.cs" />
     <Compile Include="Crud\BulkTest.cs" />
     <Compile Include="Bson\BsonTest.cs" />
     <Compile Include="Crud\DbVersionTest.cs" />

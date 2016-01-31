@@ -20,7 +20,7 @@ namespace LiteDB
 
         public static void CopyTo(this Stream input, Stream output)
         {
-            byte[] buffer = new byte[16 * 1024]; // Fairly arbitrary size
+            var buffer = new byte[4096];
             int bytesRead;
 
             while ((bytesRead = input.Read(buffer, 0, buffer.Length)) > 0)
